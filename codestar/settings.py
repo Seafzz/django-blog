@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-seafzz-djangoblog-umwl7lle4z7.ws-eu116.gitpod.io','.herokuapp.com']
 
@@ -87,7 +87,8 @@ DATABASES = {
 }
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    "https://8000-seafzz-djangoblog-umwl7lle4z7.ws-eu116.gitpod.io"
 ]
 
 # Password validation
